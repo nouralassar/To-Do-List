@@ -1,0 +1,242 @@
+:root{
+    --color-50:#effef5;
+    --color-100:#dafee9;
+    --color-200:#b8fad3;
+    --color-300 :#81f4b2;
+    --color-400:#28e278; 
+    --color-500:#1acd68;
+    --color-600:#0faa52;
+    --color-700:#108543; 
+    --color-800:#126939;
+    --color-900:#115631;
+    --color-950:#033019;
+    --padding: 1rem;
+    --gap: 1rem;
+    --rounded: 1rem;
+}
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg , var(--color-200), var(--color-400));
+    min-height: 100vh;
+    padding: var(--padding);
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.container{
+    flex-direction: column;
+    background-color: var(--color-100);
+    gap: var(--gap);
+    padding: var(--padding);
+    width: 100%;
+    max-width: 60%;
+    border-radius: var(--rounded);
+    margin-bottom: 40px;
+}
+h1{
+    color: var(--color-950);
+}
+.form{
+    width: 100%;
+}
+.input-text{
+    padding: calc(var(--padding) * 1.2) var(--padding);
+    border-radius: var(--rounded);
+    outline: none;
+    border: 1px solid var(--color-300);
+    font-size: 1rem;
+    color: var(--color-950);
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: bold;
+    flex: 1;
+    caret-color: var(--color-500);
+}
+.add-btn{
+    padding: calc(var(--padding) * 1.2) var(--padding);
+    border-radius: var(--rounded);
+    outline: none;
+    border: 1px solid var(--color-300);
+    font-size: 1rem;
+    color: var(--color-950);    
+    background: linear-gradient(135deg, var(--color-300), var(--color-400));
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.dashboard{
+    width: 100%;
+}
+ .all-tasks , .completed-tasks , .date{
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--color-400), var(--color-300));
+    gap: var(--gap);
+    border-radius: var(--rounded);
+    padding: calc(var(--padding) * 1.2) var(--padding);
+    flex: 1;
+    color: var(--color-950);
+    text-transform: capitalize;
+    font-size: .9rem;
+ }
+ .all-tasks h3, .completed-tasks h3, .date-display h3{
+    text-align: center;
+ }
+  .text-date h3{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+ .text-date h3 i{
+    color: var(--color-950);
+    font-size: 1.5rem;
+ }
+ .all-tasks p, .completed-tasks p, .date p{
+    font-weight: bold;
+    font-size: 1.2rem;
+ }
+
+ .date{
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-list{
+    list-style-type: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.task-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    flex-direction: column;   
+    width: 31%;
+    background-color: var(--color-400);
+    flex-direction: column;
+    padding: calc(var(--padding) * 1.4) var(--padding);
+    border-radius: var(--rounded);
+    cursor: pointer;
+}
+.task-item .span-item{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-950);
+    text-transform: capitalize;
+    text-align: center;
+}
+.task-item .delete-btn{
+    padding: calc(var(--padding)*.5) calc(var(--padding)*1.6);
+    border-radius: var(--rounded);
+    outline: none;
+    background-color: red;
+    color:var(--color-50);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+.task-item .delete-btn:hover{
+    background-color: darkred;
+}
+.task-item.hover{
+    background-color: var(--color-200);
+}
+.task-item.hover .span-item{
+    text-decoration: line-through;
+}
+.footer{
+    width: 100%;
+    color: var(--color-950);
+    font-size: 1rem;
+    margin-top: 20px;
+    justify-content: space-around;
+    padding: var(--padding);
+    background: linear-gradient(135deg,  var(--color-300), var(--color-500));
+    border-radius: var(--rounded);
+}
+.foot-text{
+    flex-direction: column;
+    gap: var(--gap);
+    align-items: start;
+}
+.foot-contaat{
+    font-size: 1.2rem;
+}
+.foot-contaat a{
+    color: var(--color-950);
+    transition: all .3s ease;
+}
+.foot-contaat .a-foot:hover{
+     translate: 0 -3px ;
+}
+@media (max-width:1070px) {
+     .dashboard{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all-tasks , .completed-tasks{
+        width: 48%;
+        flex: unset;
+    }
+
+     .date{
+        width: 99%;
+        flex: unset;
+
+     }
+
+}
+
+@media (max-width:715px) {
+    .container{
+        max-width: 90%;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .input-text{
+        width: 100%;
+    }
+    .add-btn{
+        width: 100%;
+    }
+    .dashboard{
+    flex-direction: column;
+    }
+    .all-tasks , .completed-tasks, .date{
+    width: 100%;
+    }
+    .task-list{
+        flex-direction: column;
+    }
+    .task-item{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+  
+
+    
+}
+
+
+
+

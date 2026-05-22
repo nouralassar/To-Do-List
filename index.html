@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <!-- description -->
+    <meta name="description" content="A modern and responsive To-Do List application built using HTML, CSS, and JavaScript. The app allows users to add, complete, delete, and save tasks using Local Storage for a better daily productivity experience.">
+    <!-- keywords -->
+    <meta name="keywords" content="To-Do List, Task Manager, JavaScript Project, HTML CSS JavaScript, Local Storage App, Productivity App, Responsive Design, Frontend Project, Todo App, Web Development, Task Organizer">
+    <!-- مبرمج الموقع -->
+    <meta name="author" content="Nour Al-Din Al-Assar"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- og -->
+    <meta property="og:title" content="To-Do List App">
+    <meta property="og:description" content="A modern and responsive To-Do List application built using HTML, CSS, and JavaScript with Local Storage support.">
+    <meta property="og:image" content="assets/images/preview.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-link.com">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon"> 
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex">
+    <!-- container -->
+    <div class="container flex">
+        <h1>To-Do List</h1>
+        <!-- form -->
+        <form action="#" class="form flex">
+            <input type="text" name="" id="" placeholder="Enter Your Task..." class="input-text">
+            <button id="" class="add-btn">add task</button>
+        </form>
+        <!-- dashboard -->
+         <div class="dashboard flex">
+            <div class="flex all-tasks">
+                <h3>All Tasks</h3>
+                <p id="all-tasks-p">0</p>
+            </div>
+            <div class="flex completed-tasks">
+                <h3>Completed Tasks</h3>
+                <p id="completed-tasks-p">0</p>
+            </div>
+            <div class="date flex">
+                <h3><i class="fa-solid fa-calendar-days"></i> Date</h3>
+                <p class="date-display">0</p>
+            </div>
+        </div>
+        <!-- task-list -->
+        <ul class="task-list flex">
+        </ul>
+    </div>
+    <!-- footer -->
+    <footer class="footer flex">
+        <div class="foot-text flex">
+        <p>Developed  by <strong>Nour Al-Din Al-Assar</strong></p> 
+        <p>Copyright &copy; 2026</p> </div>
+        <div class="foot-contaat flex">
+        <a href="#">Contact Us:</a> 
+        <a href="https://www.linkedin.com/in/nour-al-assar-7218b43b0?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="a-foot"><i class="fab fa-linkedin"></i></a>        
+        <a href="https://github.com/nouralassar" target="_blank" class="a-foot"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/nour_al_assar2006?igsh=MW1lNXlmZmJ0bWh0aQ==" target="_blank"  class="a-foot"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/972597087341" target="_blank"  class="a-foot"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://t.me/Nouralassar" target="_blank"  class="a-foot"><i class="fa-brands fa-telegram"></i></a>
+       </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
